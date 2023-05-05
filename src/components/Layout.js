@@ -7,21 +7,17 @@ function Layout() {
     <div className="navbar">
       <h1>Bookstore</h1>
       <nav className="nav-lists">
-        <div>
-          <ul>
-            <li>
-              <Link to="/books" />
-              BOOKS
-            </li>
+        <div className="links">
+          <div>
+            <Link to="/books">BOOKS</Link>
+          </div>
 
-            <li>
-              <Link to="/categories" />
-              CATEGORIES
-            </li>
-          </ul>
+          <div>
+            <Link to="/categories">CATEGORIES</Link>
+          </div>
         </div>
         <div>
-          <IoMdContact />
+          gio
         </div>
       </nav>
     </div>
