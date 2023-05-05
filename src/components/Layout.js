@@ -1,6 +1,6 @@
-import React from "react";
-import { IoMdContact } from "react-icons/io";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { IoMdContact } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 
 function Layout() {
   return (
@@ -9,7 +9,7 @@ function Layout() {
       <nav className="nav-lists">
         <div className="links">
           <div>
-            <Link to="/books">BOOKS</Link>
+            <Link to="/">BOOKS</Link>
           </div>
 
           <div>
@@ -17,7 +17,7 @@ function Layout() {
           </div>
         </div>
         <div>
-          <IoMdContact className="signup"/>
+          <IoMdContact className="signup" />
         </div>
       </nav>
     </div>

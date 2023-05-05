@@ -1,10 +1,10 @@
-import "./App.css";
-import Books from "./components/Books";
+import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Books from './components/Books';
 
-import Layout from "./components/Layout";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Categories from "./components/Categories";
-import Default from "./components/Default";
+import Layout from './components/Layout';
+import Categories from './components/Categories';
+import Default from './components/Default';
 
 function App() {
   return (
@@ -13,7 +13,6 @@ function App() {
         <Layout />
         <Routes>
           <Route path="/" element={<Books />} />
-          <Route path="/books" element={<Books />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="*" element={<Default />} />
         </Routes>
