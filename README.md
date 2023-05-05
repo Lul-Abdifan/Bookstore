@@ -1,70 +1,220 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center"><br/></div>
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
 
-In the project directory, you can run:
+# 📗 Table of Contents
 
-### `npm start`
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[Mathematics Magician\] ](#-Mathematics-Magician-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+    - [**Mathematics Magician**](#live-demo)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage ](#usage-)
+    - [Run tests ](#run-tests-)
+    - [Deployment ](#deployment-)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- PROJECT DESCRIPTION -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 📖 [Bookstore] <a name="about-project"></a>
 
-### `npm test`
+**[Bookstore](coming soon)** This bookstore website allows users to browse and add books by author and category. Users can leave comments on books they have read, edit or delete their comments, and create wishlists.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 Built With <a name="built-with"></a>
 
-### `npm run build`
+### Tech Stack <a name="tech-stack"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<details>
+  <summary>Client</summary>
+  <ul>
+   
+    <li>Tailwind</li>
+    <li>REACT</li>
+  </ul>
+</details>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- Features -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Key Features <a name="key-features"></a>
 
-### `npm run eject`
+- **[Linter checks]**
+- **[JSX]**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- LIVE DEMO -->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Live Demo <a name="live-demo"></a>
 
-## Learn More
+### **[Maths-Magician](https://magician-app.onrender.com/)**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- GETTING STARTED -->
 
-### Code Splitting
+## 💻 Getting Started <a name="getting-started"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To get a local copy up and running, follow these steps.
 
-### Analyzing the Bundle Size
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Prerequisites
 
-### Making a Progressive Web App
+In order to run this project you need:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<ul>
+    <li>The current version of node</li>
+    <li>To have Git installed on your local machine</li>
+    <li>Node Package manager (npm) </li>
+    <li>An editor such as Visual Studio Code</li>
+  </ul>
+  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Advanced Configuration
+### Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Clone this repository to your desired folder:
 
-### Deployment
+<ul>
+    <li>Create your classic access token from github.com</li>
+    <li>run "git clone https://{access_token}@github.com/username/{repo_name}.git"</li>
+    <li>Update your git identity by running "git config --global user.email "your_email@gmail.com""</li>
+    <li>Update your name on git by running "git config --global user.name "your_name"</li>
+  </ul>
+  
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Install
 
-### `npm run build` fails to minify
+Install this project with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+- Copy [stylelintrc.json](https://github.com/microverseinc/linters-config/blob/master/react-redux/.stylelintrc.json) to the root directory of your project.
+- Run 'npx stylelint "\*_/_.{css,scss}"'
+- fix linter errors
+- run "npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x"
+- Copy [eslintrc.json](https://github.com/microverseinc/linters-config/tree/master/react-redux)
+- Run npx eslint . on the root of your directory of your project
+- Fix linter error.
+
+
+
+
+### To Install Jest
+- run npm install --save-dev jest
+- add " "test": "jest", "watch": "jest --watch *.js" to the scripts section of package.json"
+- run npm install --save-dev @babel/plugin-transform-modules-commonjs
+- create a file at the root called .babelrc
+- copy `{
+    "env": {
+        "test": {
+            "plugins": ["@babel/plugin-transform-modules-commonjs"]
+        }
+    }
+}` inside the file
+
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Usage <a name="usage"></a>
+
+To run the project, execute the following command:
+
+```sh
+  use git bash to open in Vs code
+  use npm start to run web dev server
+  npm run build to get the production version
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Run tests <a name="run-tests"></a>
+
+To run tests, run the following command:
+
+```sh
+Run "npx hint ."
+Run "npx stylelint "**/*.{css,scss} --fix " to fix linters
+Run "npx eslint . --fix to fix linters"
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Deployment <a name="triangular_flag_on_post-deployment"></a>
+
+You can deploy this project using:
+
+- github pages
+```sh
+- npm run deploy
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Author1**
+
+- GitHub: [Abdi Bekele](https://github.com/Lul-Abdifan)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdi-bekele-a63860254/)
+- e-mail: [tasanbannu@gmail.com](mailto:tasanbannu@gmail.com)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, kindly drop a star for me.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to use this medium to appreciate Microverse that bringing me The best platform ever for me.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./MIT.md) licensed.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
