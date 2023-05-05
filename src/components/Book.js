@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function Book() {
+function Book({ id, title, author }) {
   return (
-    <div>Book</div>
-  )
+    <div>
+      <h2>{title}</h2>
+      <p>{author}</p>
+      <button>Delete</button>
+    </div>
+  );
 }
 
-export default Book
+export default Book;
