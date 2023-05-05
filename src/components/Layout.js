@@ -17,7 +17,7 @@ function Layout() {
           </div>
         </div>
         <div>
-          gio
+          <IoMdContact className="signup"/>
         </div>
       </nav>
     </div>
