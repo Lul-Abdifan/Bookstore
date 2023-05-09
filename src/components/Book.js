@@ -1,18 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/features/books/booksSlice';
 
 function Book({
-  id, title, author, setBook, books,
+  itemId, title, author, category,
 }) {
-  const delBook = (id) => {
-    setBook(books.filter((book) => book.id !== id));
-  };
+  const dispatch = useDispatch();
   return (
     <div>
+      <p>{category}</p>
       <h2>{title}</h2>
       <p>{author}</p>
 
-      <button type="submit" onClick={() => delBook(id)}>
+      <button type="submit" onClick={() => dispatch(removeBook(itemId))}>
         Delete
       </button>
     </div>
@@ -21,15 +22,8 @@ function Book({
 
 export default Book;
 Book.propTypes = {
-  id: PropTypes.number.isRequired,
+  itemId: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  setBook: PropTypes.func.isRequired,
-  books: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      title: PropTypes.string.isRequired,
-      author: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
+  category: PropTypes.string.isRequired,
 };
