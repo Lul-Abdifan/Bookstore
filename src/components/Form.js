@@ -4,13 +4,7 @@ import { useDispatch } from 'react-redux';
 import { addBook, postBook } from '../redux/features/books/booksSlice';
 
 function Form() {
-  const categories = ['Fiction', 'Novel', 'Education'];
-  const dispatch = useDispatch();
-  const [book, setBook] = useState({
-    title: '',
-    author: '',
-    category: '',
-  });
+ 
 
   const addBookForm = (event) => {
     event.preventDefault();
