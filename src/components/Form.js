@@ -29,9 +29,10 @@ function Form() {
   };
 
   const handleChange = (event) => {
+    const { name, value } = event.target;
     setBook({
       ...book,
-      [event.target.name]: event.target.value,
+      [name]: value,
     });
   };
 
