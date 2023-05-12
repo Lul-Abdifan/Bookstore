@@ -12,12 +12,7 @@ function Books() {
     dispatch(getBooks());
   }, []);
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
-  if (error) {
-    return <div>{error}</div>;
-  }
+
 
   return (
     <div>
