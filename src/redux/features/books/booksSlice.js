@@ -1,26 +1,38 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import axios from 'axios';
+
+const API_ID = 'X05dw8C99FTPjpO4h5Lo';
+const URL = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${API_ID}/books`;
+
+export const getBooks = createAsyncThunk(
+  'books/fetchbook',
+  async (_, thunkAPI) => {
+    try {
+      const response = await axios.get(URL);
+      const data = await response.data;
+      return data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue('Failed to fetch user data');
+    }
+  },
+);
+export const postBook = createAsyncThunk('books/post', async (payload) => {
+  const response = await axios.post(URL, payload, {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  return response.data;
+});
+export const deleteBook = createAsyncThunk('books/delete', async (itemId) => {
+  const response = await axios.delete(`${URL}/${itemId}`);
+  return response.data;
+});
 
 const initialState = {
-  books: [
-    {
-      item_id: 'item1',
-      title: 'The Great Gatsby',
-      author: 'John Smith',
-      category: 'Fiction',
-    },
-    {
-      item_id: 'item2',
-      title: 'Anna Karenina',
-      author: 'Leo Tolstoy',
-      category: 'Fiction',
-    },
-    {
-      item_id: 'item3',
-      title: 'The Selfish Gene',
-      author: 'Richard Dawkins',
-      category: 'Nonfiction',
-    },
-  ],
+  books: [],
+  isLoading: false,
+  error: undefined,
 };
 
 const booksSlice = createSlice({
@@ -32,7 +44,7 @@ const booksSlice = createSlice({
         item_id: action.payload.item_id,
         title: action.payload.title,
         author: action.payload.author,
-        categories: action.payload.categories,
+        category: action.payload.category,
       };
       state.books.push(newBook);
     },
@@ -42,6 +54,7 @@ const booksSlice = createSlice({
       );
     },
   },
+
 });
 export const { addBook, removeBook } = booksSlice.actions;
 
