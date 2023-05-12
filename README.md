@@ -7,12 +7,12 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Mathematics Magician\] ](#-Mathematics-Magician-)
+- [📖 \[Bookstore\] ](#-Bookstore-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
-    - [**Mathematics Magician**](#live-demo)
+    - [**Bookstore**](#live-demo)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -43,6 +43,7 @@
    
     <li>Tailwind</li>
     <li>REACT</li>
+    <li>Redux</li>
   </ul>
 </details>
 
@@ -60,7 +61,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-### **[Maths-Magician](https://magician-app.onrender.com/)**
+### **[Bookstore](Coming Soon)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
