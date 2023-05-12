@@ -9,7 +9,7 @@ function Books() {
   const { error, isLoading, books } = useSelector((state) => state.book);
   useEffect(() => {
     dispatch(getBooks());
-  }, []);
+  }, [dispatch]);
 
   if (isLoading) {
     return <div>Loading...</div>;
