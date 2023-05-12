@@ -6,13 +6,17 @@ import Book from './Book';
 
 function Books() {
   const dispatch = useDispatch();
-  const books = useSelector((state) => state.book.books);
-  const { error, isLoading } = useSelector((state) => state.book);
+  const { error, isLoading, books } = useSelector((state) => state.book);
   useEffect(() => {
     dispatch(getBooks());
   }, []);
 
-
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+  if (error) {
+    return <div>{error}</div>;
+  }
 
   return (
     <div>
