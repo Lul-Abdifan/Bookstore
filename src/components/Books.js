@@ -1,11 +1,23 @@
-import { React } from 'react';
-import { useSelector } from 'react-redux';
-
+import { React, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getBooks } from '../redux/features/books/booksSlice';
 import Form from './Form';
 import Book from './Book';
 
 function Books() {
+  const dispatch = useDispatch();
   const books = useSelector((state) => state.book.books);
+  const { error, isLoading } = useSelector((state) => state.book);
+  useEffect(() => {
+    dispatch(getBooks());
+  }, []);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+  if (error) {
+    return <div>{error}</div>;
+  }
 
   return (
     <div>
@@ -18,6 +30,7 @@ function Books() {
           category={book.category}
         />
       ))}
+
       <Form />
     </div>
   );

@@ -54,7 +54,26 @@ const booksSlice = createSlice({
       );
     },
   },
-
+  extraReducers: (builder) => {
+    builder
+      .addCase(getBooks.pending, (state) => {
+        state.isLoading = true;
+        state.error = undefined;
+      })
+      .addCase(getBooks.rejected, (state, action) => {
+        state.error = action.payload;
+        state.isLoading = false;
+      })
+      .addCase(getBooks.fulfilled, (state, action) => {
+        const apiData = action.payload;
+        const books = Object.entries(apiData).map(([key, value]) => ({
+          item_id: key,
+          ...value[0],
+        }));
+        state.books = books;
+        state.isLoading = false;
+      });
+  },
 });
 export const { addBook, removeBook } = booksSlice.actions;
 
