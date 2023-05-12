@@ -6,11 +6,7 @@ import { removeBook, deleteBook } from '../redux/features/books/booksSlice';
 function Book({
   itemId, title, author, category,
 }) {
-  const dispatch = useDispatch();
 
-  const remover = (itemId) => {
-    dispatch(deleteBook(itemId)).then(() => dispatch(removeBook(itemId)));
-  };
   return (
     <div>
       <p>{category}</p>
