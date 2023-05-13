@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Layout() {
   return (
     <div className="navbar">
-      <h1>Bookstore</h1>
+      <h1 className="book-header">Bookstore</h1>
       <nav className="nav-lists">
         <div className="links">
           <div>
