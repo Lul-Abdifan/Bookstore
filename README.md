@@ -31,7 +31,8 @@
 
 # 📖 [Bookstore] <a name="about-project"></a>
 
-**[Bookstore](coming soon)** This bookstore website allows users to browse and add books by author and category. Users can leave comments on books they have read, edit or delete their comments, and create wishlists.
+**[Bookstore](https://bookstore-redux-s5uw.onrender.com/)**On this bookstore website, users can add books to an API by specifying the author and category. Additionally, they can leave comments on books they have read, and have the ability to edit or delete their comments as well.
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -41,7 +42,7 @@
   <summary>Client</summary>
   <ul>
    
-    <li>Tailwind</li>
+    <li>SCSS</li>
     <li>REACT</li>
     <li>Redux</li>
   </ul>
@@ -61,7 +62,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-### **[Bookstore](Coming Soon)**
+### **[Bookstore](https://bookstore-redux-s5uw.onrender.com/)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
