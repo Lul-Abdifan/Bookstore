@@ -38,30 +38,33 @@ function Form() {
 
   return (
     <div className="form">
-      <h3>Add New Book</h3>
+      <h3 className="form-header">ADD NEW BOOK</h3>
       <form
         action=""
         className="newBook"
         onSubmit={(event) => addBookForm(event)}
       >
         <input
+          className="input"
           type="text"
           name="title"
-          placeholder="title"
+          placeholder="Book title"
           value={book.title}
           required
           onChange={(event) => handleChange(event)}
         />
 
         <input
+          className="input"
           type="text"
           name="author"
-          placeholder="author"
+          placeholder="Book author"
           value={book.author}
           required
           onChange={(event) => handleChange(event)}
         />
         <select
+          className="input"
           name="category"
           value={book.category}
           onChange={(event) => handleChange(event)}
@@ -73,7 +76,9 @@ function Form() {
             </option>
           ))}
         </select>
-        <input type="submit" />
+        <button type="submit" className=" rectangle">
+          ADD BUTTON
+        </button>
       </form>
     </div>
   );
