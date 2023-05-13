@@ -1,0 +1,104 @@
+$primary-color: blue;
+$secondary-color: rgb(88, 56, 56);
+$white-color: white;
+$whitesmoke-color: whitesmoke;
+$third-color:rgb(49, 124, 196);
+
+
+.form {
+  margin-bottom: 50px;
+  margin-left: 10%;
+
+  .input {
+    width: 250px;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    padding-left: 10px;
+    background-color: $white-color;
+  }
+}
+
+.submit,
+.update {
+  outline: none;
+  border: none;
+  margin-left: 20px;
+  background-color: rgb(0, 132, 255);
+  padding: 10px 30px;
+  color: $white-color;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.update {
+  padding: 10px 15px !important;
+  margin-left: 50px;
+}
+
+.circular-progressbar {
+  width: 200px;
+  height: 100px;
+  font-size: 15px;
+}
+
+.book-item {
+  * {
+    margin-top: 20px;
+    padding-left: 50px;
+  }
+
+  &-main {
+    width: 35%;
+  }
+}
+
+.book-container {
+  border: 10px $whitesmoke-color solid;
+  background-color: $white-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 100px;
+  padding: 10px;
+}
+
+.book-list {
+  gap: 20px;
+}
+
+.button-show {
+  outline: none;
+  border: none;
+  color: $third-color;
+  margin-top: 20px;
+  margin-right: 5px;
+  background-color: $white-color;
+  border-right: 1px solid rgb(231, 226, 226);
+  padding-right: 15px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.author {
+  color: $third-color;
+}
+
+.category {
+  color: rgb(218, 202, 202);
+}
+
+.container {
+  background-color: $whitesmoke-color;
+}
+
+.category-route {
+  margin-top: 200px;
+  text-align: center;
+  color: $primary-color;
+}
