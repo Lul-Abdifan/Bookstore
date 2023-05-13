@@ -39,24 +39,7 @@ function Book({
           Edit
         </button>
       </div>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <span>
-          {chapterNumber.percent < 100 ? (
-            <CircularProgressbar
-              className="circular-progressbar"
-              value={chapterNumber.percent}
-              text={`${chapterNumber.percent} %`}
-            />
-          ) : (
-            <CircularProgressbar
-              className="circular-progressbar"
-              value={100}
-              text={`${100} %`}
-            />
-          )}
-        </span>
-        <span style={{ marginLeft: '1rem' }}>Completed</span>
-      </div>
+
 
       <div className="book-item">
         <h4>Current Chapter</h4>
