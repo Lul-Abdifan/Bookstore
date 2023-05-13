@@ -1,8 +1,8 @@
-$primary-color: blue;
-$secondary-color: rgb(88, 56, 56);
-$white-color: white;
-$whitesmoke-color: whitesmoke;
-$third-color: rgb(49, 124, 196);
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+$primary-color: #0290ff;
+$white-color: #fff;
+$whitesmoke-color: #fafafa;
 
 * {
   padding: 0;
@@ -13,73 +13,140 @@ body {
   background-color: $whitesmoke-color;
 }
 
-.navbar {
-  background-color: $white-color;
-  padding: 30px 50px;
+.links {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 2rem;
+  padding: 1rem 9%;
+  list-style: none;
+  height: 5.938rem;
+  background-color: #fff;
 }
 
-.book-header {
-  color: $primary-color;
+.links li {
+  font-size: 1.5rem;
 }
 
-.nav-lists {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-lists .links {
-  display: flex;
-  gap: 50px;
-}
-
-.links a {
+.logo {
   text-decoration: none;
-  color: rgb(92, 38, 38);
+  font-family: Montserrat, sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
 }
 
-.signup {
-  font-size: 1.6em;
-  color: $primary-color;
+.link {
+  text-decoration: none;
+  color: #000;
+  height: 1rem;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+}
+
+.user {
+  border: #e8e8e8 1px solid;
+  display: flex;
+  height: 2.83rem;
+  width: 2.833rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: auto;
+}
+.rectangle{
+  border: none;
+  width: 11.5rem;
+  height: 2.813rem;
+  margin: 1.188rem 0 0 2.125rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  background-color: $primary-color;
+  color: #fff;
+}
+.books {
+  opacity: 1;
+}
+.form{
+  margin-bottom: 250px !important;
 }
 
 .form-header {
-  padding-bottom: 20px;
-  color: $secondary-color;
+  width: 10.875rem;
+  height: 1.5rem;
+  margin: 2.813rem 32.75rem 2.188rem 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #888;
 }
-
+.percentage {
+ 
+  color: #121212 ;
+  font-size: 2rem;
+  padding-left: 20px;
+}
 .form {
   margin-bottom: 50px;
   margin-left: 10%;
 
   .input {
     width: 250px;
-    height: 30px;
+    height: 2.813rem;
     outline: none;
-    border: none;
+    border: solid 1px $white-color;
     margin-right: 20px;
     padding-left: 10px;
     background-color: $white-color;
   }
 }
+.completed {
+  opacity: 0.5;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top:10px;
+}
 
-.submit,
 .update {
   outline: none;
   border: none;
   margin-left: 50px;
-  background-color: rgb(0, 132, 255);
+  width: 11.5rem;
+  height: 2.063rem;
+  background-color: $primary-color;
   padding: 10px 15px !important;
   color: $white-color;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  border-radius: 3px;
 
   &:hover {
     cursor: pointer;
   }
+}
+.progress-container {
+  display: flex;
+}
+.chapter {
+  font-family: RobotoSlab, sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  margin: 25px 50px;
+  color: #121212;
+}
+.chapter-header {
+  opacity: 0.5;
+  margin-top: -30px;
 }
 
 .circular-progressbar {
@@ -88,10 +155,9 @@ body {
   font-size: 15px;
 }
 
-.book-item {
+.book-item-main {
   * {
-    margin-top: 20px;
-    padding-left: 50px;
+    padding-left: 18px;
   }
 
   &-main {
@@ -109,19 +175,17 @@ body {
   padding: 10px;
 }
 
-.book-list {
-  gap: 20px;
-}
-
 .button-show {
   outline: none;
   border: none;
-  color: $third-color;
-  margin-top: 20px;
-  margin-right: 5px;
   background-color: $white-color;
+  font-size: 24px;
+  margin: 30px 0px;
+  font-family: RobotoSlab, sans-serif;
+  font-weight: 300;
+  color: #4386bf;
   border-right: 1px solid rgb(231, 226, 226);
-  padding-right: 15px;
+  padding: 0px 15px;
 
   &:hover {
     cursor: pointer;
@@ -129,11 +193,37 @@ body {
 }
 
 .author {
-  color: $third-color;
+  width: 5.813rem;
+  height: 1.188rem;
+  margin: 10px 0px;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+
+  color: #4386bf;
 }
 
 .category {
-  color: rgb(218, 202, 202);
+  width: 7rem;
+  height: 1.125rem;
+  margin: 0 4rem 0 0;
+  margin: 20px 0px;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+
+  color: #121212;
+}
+
+.title {
+  width: 3.375rem;
+  height: 1.813rem;
+  margin: 0.188rem 2.125rem 0 0;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #121212;
 }
 
 .container {

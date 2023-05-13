@@ -38,7 +38,7 @@ function Form() {
 
   return (
     <div className="form">
-      <h3 className="form-header">Add New Book</h3>
+      <h3 className="form-header">ADD NEW BOOK</h3>
       <form
         action=""
         className="newBook"
@@ -76,7 +76,7 @@ function Form() {
             </option>
           ))}
         </select>
-        <button type="submit" className="submit">
+        <button type="submit" className=" rectangle">
           ADD BUTTON
         </button>
       </form>

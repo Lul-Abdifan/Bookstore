@@ -22,7 +22,7 @@ function Book({
     <div className="book-container">
       <div className="book-item-main">
         <p className="category">{category}</p>
-        <h2>{title}</h2>
+        <h2 className="title">{title}</h2>
         <p className="author">{author}</p>
         <button type="submit" className="button-show">
           Comments
@@ -42,28 +42,38 @@ function Book({
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <span>
           {chapterNumber.percent < 100 ? (
-            <CircularProgressbar
-              className="circular-progressbar"
-              value={chapterNumber.percent}
-              text={`${chapterNumber.percent} %`}
-            />
+            <div className="progress-container">
+              <CircularProgressbar
+                className="circular-progressbar"
+                value={chapterNumber.percent}
+                text=""
+              />
+              <div className="percentage">
+                {`${chapterNumber.percent}%`}
+
+                <span className="completed">
+                  Completed
+                </span>
+              </div>
+
+            </div>
           ) : (
             <CircularProgressbar
               className="circular-progressbar"
               value={100}
-              text={`${100} %`}
+              text=""
             />
           )}
         </span>
-        <span style={{ marginLeft: '1rem' }}>Completed</span>
+
       </div>
 
       <div className="book-item">
-        <h4>Current Chapter</h4>
+        <h4 className="chapter chapter-header">Current Chapter</h4>
         {chapterNumber.chapter < 10 ? (
-          <h2>{`Chapter ${chapterNumber.chapter}`}</h2>
+          <h2 className="chapter current-chapter">{`Chapter ${chapterNumber.chapter}`}</h2>
         ) : (
-          <h2>Completed</h2>
+          <h2 className="completed">Completed</h2>
         )}
 
         <button
@@ -74,7 +84,7 @@ function Book({
             percent: chapterNumber.percent + 10,
           })}
         >
-          Update Progress
+          UPDATE PROGRESS
         </button>
       </div>
     </div>
