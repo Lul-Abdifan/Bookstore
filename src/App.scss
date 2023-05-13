@@ -4,6 +4,54 @@ $white-color: white;
 $whitesmoke-color: whitesmoke;
 $third-color:rgb(49, 124, 196);
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $whitesmoke-color;
+}
+
+.navbar {
+  background-color: $white-color;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.book-header {
+  color: $primary-color;
+}
+
+.nav-lists {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-lists .links {
+  display: flex;
+  gap: 50px;
+}
+
+.links a {
+  text-decoration: none;
+  color: rgb(92, 38, 38);
+}
+
+.signup {
+  font-size: 1.6em;
+  color: $primary-color;
+}
+
+.form-header {
+  padding-bottom: 20px;
+  color: $secondary-color;
+}
 
 .form {
   margin-bottom: 50px;
